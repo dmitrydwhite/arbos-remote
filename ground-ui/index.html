@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbos</title>
+</head>
+<style>
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
+
+    td, th {
+        padding: 0 12px;
+    }
+
+    .flex-h {
+        display: flex;
+    }
+
+    .flex-v {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .around {
+        justify-content: space-around;
+    }
+
+    .outer {
+        justify-content: space-between;
+    }
+
+    .center {
+        justify-content: center;
+    }
+
+    .x-center {
+        align-items: center;
+    }
+
+    .end {
+        justify-content: flex-end;
+    }
+
+    .blk-link {
+        color: black;
+    }
+
+    .mono {
+        font-family: monospace;
+        font-size: 11px;
+    }
+</style>
+<body>
+    <div class="flex-h outer">
+        <div class="flex-h x-center">
+            <h1>Arbos Operator Station</h1>
+            <h3>&nbsp;&#10132; <a href="#" class="blk-link">Test Mission</a></h3>
+            <!-- <h3>&nbsp;&#10132; <a href="#" class="blk-link">Satellites</a></h3> -->
+             <h3>&nbsp;&#10132; <b>Satellites</b></h3>
+        </div>
+        <div class="flex-v center">
+            <span class="flex-h end mono">22:16:49 UTC</span>
+            <span>&nbsp;</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select value="Test">
+                                <option value="Test">Test Mission</option>
+                                <option value="Prod">Production Mission</option>
+                            </select>
+                        </td>
+                        <td>Station_ID:</td>
+                        <td><b><a class="blk-link" href="#">portl_401</a></b></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Operator:</td>
+                        <td><b><a class="blk-link" href="#">Dmitry White</a></b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr />
+    <div class="flex-h around">
+        <!-- Console Logs are the records of all active console actions, this console as well as any others -->
+        <a href="#" title="All mission console actions from all operators using UI and API">Console Logs</a>
+        <span>Satellites</span>
+        <a href="#">Comm Channels</a>
+        <a href="#">Tele Commands</a>
+        <a href="#">Files</a>
+        <a href="#">Telemetry</a>
+        <a href="#">Passes</a>
+        <a href="#">Mission Settings</a>
+    </div>
+    <hr />
+    <div class="flex-h end">
+        <a href="#">Modify this view</a>
+    </div>
+    <div class="flex-h center">
+        <table style="text-align: left;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Operating ID</th>
+                    <th>Default Comm Channel</th>
+                    <th>Last Status</th>
+                    <th>Last Status Time</th>
+                    <th>Next Pass ID</th>
+                    <th>Next Pass Countdown</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node 1 Explorer</td>
+                    <td><a href="#">25544</a></td>
+                    <td><a href="#" class="blk-link">Portland Transceiver Station</a></td>
+                    <td style="text-align: center;"><a href="#" class="blk-link">OK</a></td>
+                    <td>45 minutes ago</td>
+                    <td><a href="" class="blk-link">Pass 10799856</a></td>
+                    <td>3h 45m 12s</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
